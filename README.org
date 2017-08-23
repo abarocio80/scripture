@@ -1,1 +1,25 @@
-* =scripture=
+* Scripture
+
+A UNIX-like tool for CLI querying the Scriptures.
+
+** Backend
+
+This tool uses the REST-based API of [[http://bibles.org/pages/api/documentation/passages][Bibles.org]].
+
+** Usage
+
+Scripture has a single command: =scripture=.  Its options are:
+
+#+BEGIN_SRC shell
+  scripture [options] <passage>
+#+END_SRC
+
+*** Passage
+
+It must be represented as an standard form.  Just as you are used to make your references.
+
+*** Options
+
+- =-v= :: Outputs the version number and exits.
+- =-V= | =--version=VERSION= :: Specifies the translation version of the Bible.
+- =--versions= :: Queries and displays the available versions.
